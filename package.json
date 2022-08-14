@@ -1,0 +1,27 @@
+{
+  "name": "houdini-hud",
+  "version": "0.0.1",
+  "description": "augmented-ui implemented in Houdini with hopes of future enhancements to the paint api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/propjockey/houdini-hud.git"
+  },
+  "keywords": [
+    "corner",
+    "shape",
+    "ui",
+    "augmented-ui",
+    "houdini",
+    "css"
+  ],
+  "author": "JaneOri",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/propjockey/houdini-hud/issues"
+  },
+  "homepage": "https://github.com/propjockey/houdini-hud#readme"
+}
