@@ -1,3 +1,8 @@
+/**
+ * houdini-hud
+ * BSD 2-Clause License
+ * Copyright (c) 2020 Jane Ori, PropJockey
+ */
 (() => {
   const IGNORE = -90000 // we can't currently register a non-* prop AND let it be initial, so we need a sentinel to enable composition in the meantime
   const inherits = true
