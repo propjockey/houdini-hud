@@ -12,7 +12,7 @@ new features:
   - easier to use as a decoration and less dom for glowing border filters
   - impossible to backport unfortunately
 * corner region insets added
-  - super asymetric elements now possible (saw it in a sci-fi, had to have it)
+  - super asymetric elements now possible (saw it in a sci-fi show, had to have it)
   - might backport to an augmented-ui v3
 * extend props renamed to region inset 1/2
   - much easier to use (improved DX)
