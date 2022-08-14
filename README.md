@@ -27,19 +27,19 @@ new features:
 
 nyi or lost features:
 
-[ ] delegated border and inlay features (easy)
-[ ] independent inlay and border top/left/right/bottom sizes (very difficult)
+- [ ] delegated border and inlay features (easy)
+- [ ] independent inlay and border top/left/right/bottom sizes (very difficult)
 
 # Houdini Paint Worklet Wish-List
 
-[ ] Direct px manipulation of paint ctx (px shaders!)
-[ ] paint ctx.createImageData()
-[ ] Register and use as input "&lt;image&gt;" syntax (and be able to manipulate the px imageData)
-[ ] Register compund syntaxes & Resolve to px value in CSSOM when it can "&lt;length&gt;|initial"
-[ ] Ability to register perecent properties with width|height|inline|block dimension-resolution hints
-[ ] That ^ so that CSSOM resolves `calc(100% - 20vw)`, etc
-[ ] OffscreenCanvas in paint worklet
-[ ] new Image() in paint worklet
+- [ ] Direct px manipulation of paint ctx (px shaders!)
+- [ ] paint ctx.createImageData()
+- [ ] Register and use as input "&lt;image&gt;" syntax (and be able to manipulate the px imageData)
+- [ ] Register compund syntaxes & Resolve to px value in CSSOM when it can "&lt;length&gt;|initial"
+- [ ] Ability to register perecent properties with width|height|inline|block dimension-resolution hints
+- [ ] That ^ so that CSSOM resolves `calc(100% - 20vw)`, etc
+- [ ] OffscreenCanvas in paint worklet
+- [ ] new Image() in paint worklet
 
 houdini-hud won't reach v1 until I can do a glitch and 3D curved effect on the ctx after (basically any form of px reading of the ctx imageData/bitmap).
 
