@@ -92,40 +92,40 @@
             bly: this.compose(props, height, "bl-inset-y", "bl-inset", 0)
           }
         }
-        positionInset (props, width, height) {
+        positionInset (props, width, height, equippedAugs) {
           return {
-            tl1x: this.compose(props, width, "tl1-inset-x", "tl1-inset", 0),
-            tl1y: this.compose(props, height, "tl1-inset-y", "tl1-inset", 0),
-            tl2x: this.compose(props, width, "tl2-inset-x", "tl2-inset", 0),
-            tl2y: this.compose(props, height, "tl2-inset-y", "tl2-inset", 0),
-            t1x: this.compose(props, width, "t1-inset-x", "t1-inset", 0),
-            t1y: this.compose(props, height, "t1-inset-y", "t1-inset", 0),
-            t2x: this.compose(props, width, "t2-inset-x", "t2-inset", 0),
-            t2y: this.compose(props, height, "t2-inset-y", "t2-inset", 0),
-            tr1x: this.compose(props, width, "tr1-inset-x", "tr1-inset", 0),
-            tr1y: this.compose(props, height, "tr1-inset-y", "tr1-inset", 0),
-            tr2x: this.compose(props, width, "tr2-inset-x", "tr2-inset", 0),
-            tr2y: this.compose(props, height, "tr2-inset-y", "tr2-inset", 0),
-            r1x: this.compose(props, width, "r1-inset-x", "r1-inset", 0),
-            r1y: this.compose(props, height, "r1-inset-y", "r1-inset", 0),
-            r2x: this.compose(props, width, "r2-inset-x", "r2-inset", 0),
-            r2y: this.compose(props, height, "r2-inset-y", "r2-inset", 0),
-            br1x: this.compose(props, width, "br1-inset-x", "br1-inset", 0),
-            br1y: this.compose(props, height, "br1-inset-y", "br1-inset", 0),
-            br2x: this.compose(props, width, "br2-inset-x", "br2-inset", 0),
-            br2y: this.compose(props, height, "br2-inset-y", "br2-inset", 0),
-            b1x: this.compose(props, width, "b1-inset-x", "b1-inset", 0),
-            b1y: this.compose(props, height, "b1-inset-y", "b1-inset", 0),
-            b2x: this.compose(props, width, "b2-inset-x", "b2-inset", 0),
-            b2y: this.compose(props, height, "b2-inset-y", "b2-inset", 0),
-            bl1x: this.compose(props, width, "bl1-inset-x", "bl1-inset", 0),
-            bl1y: this.compose(props, height, "bl1-inset-y", "bl1-inset", 0),
-            bl2x: this.compose(props, width, "bl2-inset-x", "bl2-inset", 0),
-            bl2y: this.compose(props, height, "bl2-inset-y", "bl2-inset", 0),
-            l1x: this.compose(props, width, "l1-inset-x", "l1-inset", 0),
-            l1y: this.compose(props, height, "l1-inset-y", "l1-inset", 0),
-            l2x: this.compose(props, width, "l2-inset-x", "l2-inset", 0),
-            l2y: this.compose(props, height, "l2-inset-y", "l2-inset", 0)
+            tl1x: (equippedAugs.tl1 && this.compose(props, width, "tl1-inset-x", "tl1-inset", 0)) || 0,
+            tl1y: (equippedAugs.tl1 && this.compose(props, height, "tl1-inset-y", "tl1-inset", 0)) || 0,
+            tl2x: (equippedAugs.tl2 && this.compose(props, width, "tl2-inset-x", "tl2-inset", 0)) || 0,
+            tl2y: (equippedAugs.tl2 && this.compose(props, height, "tl2-inset-y", "tl2-inset", 0)) || 0,
+            t1x: (equippedAugs.t1 && this.compose(props, width, "t1-inset-x", "t1-inset", 0)) || 0,
+            t1y: (equippedAugs.t1 && this.compose(props, height, "t1-inset-y", "t1-inset", 0)) || 0,
+            t2x: (equippedAugs.t2 && this.compose(props, width, "t2-inset-x", "t2-inset", 0)) || 0,
+            t2y: (equippedAugs.t2 && this.compose(props, height, "t2-inset-y", "t2-inset", 0)) || 0,
+            tr1x: (equippedAugs.tr1 && this.compose(props, width, "tr1-inset-x", "tr1-inset", 0)) || 0,
+            tr1y: (equippedAugs.tr1 && this.compose(props, height, "tr1-inset-y", "tr1-inset", 0)) || 0,
+            tr2x: (equippedAugs.tr2 && this.compose(props, width, "tr2-inset-x", "tr2-inset", 0)) || 0,
+            tr2y: (equippedAugs.tr2 && this.compose(props, height, "tr2-inset-y", "tr2-inset", 0)) || 0,
+            r1x: (equippedAugs.r1 && this.compose(props, width, "r1-inset-x", "r1-inset", 0)) || 0,
+            r1y: (equippedAugs.r1 && this.compose(props, height, "r1-inset-y", "r1-inset", 0)) || 0,
+            r2x: (equippedAugs.r2 && this.compose(props, width, "r2-inset-x", "r2-inset", 0)) || 0,
+            r2y: (equippedAugs.r2 && this.compose(props, height, "r2-inset-y", "r2-inset", 0)) || 0,
+            br1x: (equippedAugs.br1 && this.compose(props, width, "br1-inset-x", "br1-inset", 0)) || 0,
+            br1y: (equippedAugs.br1 && this.compose(props, height, "br1-inset-y", "br1-inset", 0)) || 0,
+            br2x: (equippedAugs.br2 && this.compose(props, width, "br2-inset-x", "br2-inset", 0)) || 0,
+            br2y: (equippedAugs.br2 && this.compose(props, height, "br2-inset-y", "br2-inset", 0)) || 0,
+            b1x: (equippedAugs.b1 && this.compose(props, width, "b1-inset-x", "b1-inset", 0)) || 0,
+            b1y: (equippedAugs.b1 && this.compose(props, height, "b1-inset-y", "b1-inset", 0)) || 0,
+            b2x: (equippedAugs.b2 && this.compose(props, width, "b2-inset-x", "b2-inset", 0)) || 0,
+            b2y: (equippedAugs.b2 && this.compose(props, height, "b2-inset-y", "b2-inset", 0)) || 0,
+            bl1x: (equippedAugs.bl1 && this.compose(props, width, "bl1-inset-x", "bl1-inset", 0)) || 0,
+            bl1y: (equippedAugs.bl1 && this.compose(props, height, "bl1-inset-y", "bl1-inset", 0)) || 0,
+            bl2x: (equippedAugs.bl2 && this.compose(props, width, "bl2-inset-x", "bl2-inset", 0)) || 0,
+            bl2y: (equippedAugs.bl2 && this.compose(props, height, "bl2-inset-y", "bl2-inset", 0)) || 0,
+            l1x: (equippedAugs.l1 && this.compose(props, width, "l1-inset-x", "l1-inset", 0)) || 0,
+            l1y: (equippedAugs.l1 && this.compose(props, height, "l1-inset-y", "l1-inset", 0)) || 0,
+            l2x: (equippedAugs.l2 && this.compose(props, width, "l2-inset-x", "l2-inset", 0)) || 0,
+            l2y: (equippedAugs.l2 && this.compose(props, height, "l2-inset-y", "l2-inset", 0)) || 0
           }
         }
         centerOffset (props, width, height, edgeMeta) {
@@ -143,40 +143,40 @@
             loffset: this.compose(props, height, "l-offset", 0)
           }
         }
-        positionSize (props, width, height) {
+        positionSize (props, width, height, equippedAugs) {
           return {
-            tl1w: this.compose(props, width, "tl1-width", "tl1-size", 0),
-            tl1h: this.compose(props, height, "tl1-height", "tl1-size", 0),
-            tl2w: this.compose(props, width, "tl2-width", "tl2-size", 0),
-            tl2h: this.compose(props, height, "tl2-height", "tl2-size", 0),
-            t1w: this.compose(props, width, "t1-width", "t1-size", 0),
-            t1h: this.compose(props, height, "t1-height", "t1-size", 0),
-            t2w: this.compose(props, width, "t2-width", "t2-size", 0),
-            t2h: this.compose(props, height, "t2-height", "t2-size", 0),
-            tr1w: this.compose(props, width, "tr1-width", "tr1-size", 0),
-            tr1h: this.compose(props, height, "tr1-height", "tr1-size", 0),
-            tr2w: this.compose(props, width, "tr2-width", "tr2-size", 0),
-            tr2h: this.compose(props, height, "tr2-height", "tr2-size", 0),
-            r1w: this.compose(props, width, "r1-width", "r1-size", 0),
-            r1h: this.compose(props, height, "r1-height", "r1-size", 0),
-            r2w: this.compose(props, width, "r2-width", "r2-size", 0),
-            r2h: this.compose(props, height, "r2-height", "r2-size", 0),
-            br1w: this.compose(props, width, "br1-width", "br1-size", 0),
-            br1h: this.compose(props, height, "br1-height", "br1-size", 0),
-            br2w: this.compose(props, width, "br2-width", "br2-size", 0),
-            br2h: this.compose(props, height, "br2-height", "br2-size", 0),
-            b1w: this.compose(props, width, "b1-width", "b1-size", 0),
-            b1h: this.compose(props, height, "b1-height", "b1-size", 0),
-            b2w: this.compose(props, width, "b2-width", "b2-size", 0),
-            b2h: this.compose(props, height, "b2-height", "b2-size", 0),
-            bl1w: this.compose(props, width, "bl1-width", "bl1-size", 0),
-            bl1h: this.compose(props, height, "bl1-height", "bl1-size", 0),
-            bl2w: this.compose(props, width, "bl2-width", "bl2-size", 0),
-            bl2h: this.compose(props, height, "bl2-height", "bl2-size", 0),
-            l1w: this.compose(props, width, "l1-width", "l1-size", 0),
-            l1h: this.compose(props, height, "l1-height", "l1-size", 0),
-            l2w: this.compose(props, width, "l2-width", "l2-size", 0),
-            l2h: this.compose(props, height, "l2-height", "l2-size", 0)
+            tl1w: (equippedAugs.tl1 && this.compose(props, width, "tl1-width", "tl1-size", 0)) || 0,
+            tl1h: (equippedAugs.tl1 && this.compose(props, height, "tl1-height", "tl1-size", 0)) || 0,
+            tl2w: (equippedAugs.tl2 && this.compose(props, width, "tl2-width", "tl2-size", 0)) || 0,
+            tl2h: (equippedAugs.tl2 && this.compose(props, height, "tl2-height", "tl2-size", 0)) || 0,
+            t1w: (equippedAugs.t1 && this.compose(props, width, "t1-width", "t1-size", 0)) || 0,
+            t1h: (equippedAugs.t1 && this.compose(props, height, "t1-height", "t1-size", 0)) || 0,
+            t2w: (equippedAugs.t2 && this.compose(props, width, "t2-width", "t2-size", 0)) || 0,
+            t2h: (equippedAugs.t2 && this.compose(props, height, "t2-height", "t2-size", 0)) || 0,
+            tr1w: (equippedAugs.tr1 && this.compose(props, width, "tr1-width", "tr1-size", 0)) || 0,
+            tr1h: (equippedAugs.tr1 && this.compose(props, height, "tr1-height", "tr1-size", 0)) || 0,
+            tr2w: (equippedAugs.tr2 && this.compose(props, width, "tr2-width", "tr2-size", 0)) || 0,
+            tr2h: (equippedAugs.tr2 && this.compose(props, height, "tr2-height", "tr2-size", 0)) || 0,
+            r1w: (equippedAugs.r1 && this.compose(props, width, "r1-width", "r1-size", 0)) || 0,
+            r1h: (equippedAugs.r1 && this.compose(props, height, "r1-height", "r1-size", 0)) || 0,
+            r2w: (equippedAugs.r2 && this.compose(props, width, "r2-width", "r2-size", 0)) || 0,
+            r2h: (equippedAugs.r2 && this.compose(props, height, "r2-height", "r2-size", 0)) || 0,
+            br1w: (equippedAugs.br1 && this.compose(props, width, "br1-width", "br1-size", 0)) || 0,
+            br1h: (equippedAugs.br1 && this.compose(props, height, "br1-height", "br1-size", 0)) || 0,
+            br2w: (equippedAugs.br2 && this.compose(props, width, "br2-width", "br2-size", 0)) || 0,
+            br2h: (equippedAugs.br2 && this.compose(props, height, "br2-height", "br2-size", 0)) || 0,
+            b1w: (equippedAugs.b1 && this.compose(props, width, "b1-width", "b1-size", 0)) || 0,
+            b1h: (equippedAugs.b1 && this.compose(props, height, "b1-height", "b1-size", 0)) || 0,
+            b2w: (equippedAugs.b2 && this.compose(props, width, "b2-width", "b2-size", 0)) || 0,
+            b2h: (equippedAugs.b2 && this.compose(props, height, "b2-height", "b2-size", 0)) || 0,
+            bl1w: (equippedAugs.bl1 && this.compose(props, width, "bl1-width", "bl1-size", 0)) || 0,
+            bl1h: (equippedAugs.bl1 && this.compose(props, height, "bl1-height", "bl1-size", 0)) || 0,
+            bl2w: (equippedAugs.bl2 && this.compose(props, width, "bl2-width", "bl2-size", 0)) || 0,
+            bl2h: (equippedAugs.bl2 && this.compose(props, height, "bl2-height", "bl2-size", 0)) || 0,
+            l1w: (equippedAugs.l1 && this.compose(props, width, "l1-width", "l1-size", 0)) || 0,
+            l1h: (equippedAugs.l1 && this.compose(props, height, "l1-height", "l1-size", 0)) || 0,
+            l2w: (equippedAugs.l2 && this.compose(props, width, "l2-width", "l2-size", 0)) || 0,
+            l2h: (equippedAugs.l2 && this.compose(props, height, "l2-height", "l2-size", 0)) || 0
           }
         }
         drawAugFromTL (augPath, lastPoint, aug, augWidth, augHeight) {
@@ -539,8 +539,8 @@
           const border = this.border(props, width, height)
           const inlay = this.inlay(props, width, height)
           const regionInset = this.regionInset(props, width, height)
-          const positionInset = this.positionInset(props, width, height)
-          const size = this.positionSize(props, width, height)
+          const positionInset = this.positionInset(props, width, height, equippedAugs)
+          const size = this.positionSize(props, width, height, equippedAugs)
           const edgeMeta = this.edgeMeta(regionInset, positionInset, size)
           const centerOffset = this.centerOffset(props, width, height, edgeMeta)
 
