@@ -7,6 +7,12 @@
 
 Projects already using augmented-ui can also use houdini-hud if needed/wanted.
 
+[GitHub](https://github.com/propjockey/houdini-hud)
+
+[NPM](https://www.npmjs.com/package/houdini-hud)
+
+[Interactive Documentation (WIP)](http://houdini-hud.com)
+
 ## Documentation
 
 `npm install houdini-hud`
@@ -17,7 +23,7 @@ or use it directly from your favorite CDN:
 
 `<script src="https://unpkg.com/houdini-hud@0.0.1/index.js"></script>`
 
-then add it to any element (except on a tags)
+then add it to any element (except on or inside `a` tags)
 
 `<div data-houdini-hud="both">My augmented element</div>`
 
@@ -29,7 +35,7 @@ and take a look at the ~150 CSS properties avaialbe to shape it however you want
 
 ## Planned Breaking Changes
 
-* Almost all of the custom properties are currently `inherit: true`. When we can register `&lt;image&gt;` syntax and pass parameters to the paint worklet without flags, they will no longer need to inherit; Almost all will be set to `inherit: false`. (do not rely on `--hud-` vars being inherited to non- `data-houdini-hud` elements)
+* Almost all of the custom properties are currently `inherit: true`. When we can register `<image>` syntax and pass parameters to the paint worklet without flags, they will no longer need to inherit; Almost all will be set to `inherit: false`. (do not rely on `--hud-` vars being inherited to non- `data-houdini-hud` elements)
 
 ## NYI Features:
 
